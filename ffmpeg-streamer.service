@@ -1,0 +1,11 @@
+[Unit]
+Description=FFmpegStreaming
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/root/rtmp-video-files-streamer/ffmpeg-streamer.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
